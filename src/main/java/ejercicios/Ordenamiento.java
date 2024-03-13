@@ -2,6 +2,7 @@
 package ejercicios;
 
 import static ejercicios.SetDeTenis.evaluar;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -11,7 +12,13 @@ import java.util.Scanner;
 public class Ordenamiento {
     public static String evaluar(int numero1, int numero2, int numero3, int numero4) {
         // TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
-        return "";
+        int[] ns = {numero1, numero2, numero3, numero4};
+        Arrays.sort(ns);
+        StringBuilder sb = new StringBuilder();
+        for (int i : ns) {
+            sb.append(i).append(" ");
+        }
+        return sb.toString().trim();
     }
     
     public static void main(String[] args) {
@@ -27,5 +34,9 @@ public class Ordenamiento {
         
         String respuesta = evaluar(numero1, numero2, numero3, numero4);
         System.out.println(respuesta);
+    }
+
+    public static String evaluar(double d, int i, double d0, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
